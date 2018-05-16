@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-weight: normal;
+  font-size: 140%;
+}
+table {
+  flex: 1;
+  width: 100%;
+}
+#blocklyArea {
+  height: 90%;
+  width: 100%;
+}
+
+#answer-wrapper {
+    height: 20px;
+    width: 100%;
+}
+
+#result-content {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column;
+}
+
+#result-spinner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blocklyToolboxDiv {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  width: 240px;
+}
+.blocklyToolboxDiv .blocklyTreeRow:not(.blocklyHidden) {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 1px solid #ddd;
+}
+.blocklyToolboxDiv .blocklyTreeRow:not(.blocklyHidden) .blocklyTreeLabel {
+  font-size: 14px;
+}
+
+.blocklyFlyout {
+  z-index: 100;
+}
+.blocklyFlyout .blocklyFlyoutBackground {
+  border-radius: 0;
+  fill: #fff;
+}
+
+.blocklyBubbleCanvas .blocklyFlyoutBackground {
+  fill: #ddd;
+}
+.blocklyBubbleCanvas > g > g {
+  filter: inherit;
+}
+.blocklyBubbleCanvas .blocklyDraggable {
+  rx: 0;
+  ry: 0;
+  fill: #4696F7;
+}
+
+.blocklyMainBackground {
+  fill: #f5f5f5 !important;
+}
+
+.blocklyPathDark, .blocklyPathLight {
+  display: none;
+}
+
+.blocklySelected > .blocklyPath {
+  stroke-width: 0px !important;
+}
+
+.blocklyEditableText > rect {
+  rx: 2 !important;
+  ry: 2 !important;
+}
+
+.blocklyWidgetDiv {
+  z-index: 100 !important;
+}

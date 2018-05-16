@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> inLay calculator</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <script src="js/blockly_uncompressed.js"></script>
+  <script src="js/blocks/logic.js"></script>
+  <script src="js/blocks/loops.js"></script>
+  <script src="js/blocks/math.js"></script>
+  <script src="js/blocks/text.js"></script>
+  <script src="js/blocks/lists.js"></script>
+  <script src="js/blocks/colour.js"></script>
+  <script src="js/blocks/variables.js"></script>
+  <script src="js/blocks/procedures.js"></script>
+
+  <script src="js/generators/python.js"></script>
+  <script src="js/generators/python/logic.js"></script>
+  <script src="js/generators/python/loops.js"></script>
+  <script src="js/generators/python/math.js"></script>
+  <script src="js/generators/python/text.js"></script>
+  <script src="js/generators/python/lists.js"></script>
+  <script src="js/generators/python/colour.js"></script>
+  <script src="js/generators/python/variables.js"></script>
+  <script src="js/generators/python/procedures.js"></script>
+  <script src="js/msg/js/ja.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">inLay calculator</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+            <button id="run" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+              <i class="material-icons">send</i>
+            </button>
+        </nav>
+      </div>
+    </header>
+
+    <div id="blocklyArea"> </div>
+    <div id="blocklyDiv" style="position: absolute"></div>
+  <div>
+
+  <dialog class="mdl-dialog" style="min-width: 660px;">
+      <h4 class="mdl-dialog__title">計算結果</h4>
+      <div id="result-content" class="mdl-dialog__content">
+        <div id=result-spinner-wrapper>
+          <div id="result-spinner" class="mdl-spinner mdl-js-spinner is-active" style="width:60px;height:60px;"></div>
+        </div>
+      </div>
+      <div class="mdl-dialog__actions">
+        <button type="button" class="close mdl-button">OK</button>
+      </div>
+    </dialog>
+
+
+
+
+
+    <xml id="toolbox" style="display: none">
+        <block type="math_number"></block>
+        <block type="variable"></block>
+        <block type="math_arithmetic"></block>
+        <block type="logic_compare"></block>
+        <block type="math_single"></block>
+        <block type="math_trig"></block>
+        <block type="math_constant"></block>
+        <block type="differential"></block>
+        <block type="multi_differential"></block>
+        <block type="integral"></block>
+        <block type="definite_integral"></block>
+        <block type="solve"></block>
+    </xml>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
