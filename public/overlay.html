@@ -42,15 +42,16 @@
         <!-- Navigation. We hide it in small screens. -->
         <nav class="mdl-navigation mdl-layout--large-screen-only">
 
-            <button id="run" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-              <i class="material-icons">send</i>
-            </button>
         </nav>
       </div>
     </header>
 
     <div id="blocklyArea"> </div>
     <div id="blocklyDiv" style="position: absolute"></div>
+
+    <button id="run" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+      <i class="material-icons">send</i>
+    </button>
   <div>
 
   <dialog class="mdl-dialog" style="min-width: 660px;">
@@ -70,17 +71,29 @@
 
 
     <xml id="toolbox" style="display: none">
+        <label text="数字"></label>
         <block type="math_number"></block>
+        <label text="変数"></label>
         <block type="variable"></block>
+        <label text="演算子(+, -, ✕、÷, ^)"></label>
         <block type="math_arithmetic"></block>
+        <label text="比較演算子(=, >, <, ≧, ≦)"></label>
         <block type="logic_compare"></block>
+        <label text="その他の演算"></label>
         <block type="math_single"></block>
+        <label text="三角関数"></label>
         <block type="math_trig"></block>
+        <label text="定数"></label>
         <block type="math_constant"></block>
+        <label text="微分"></label>
         <block type="differential"></block>
+        <label text="n階微分"></label>
         <block type="multi_differential"></block>
+        <label text="積分"></label>
         <block type="integral"></block>
+        <label text="定積分"></label>
         <block type="definite_integral"></block>
+        <label text="方程式"></label>
         <block type="solve"></block>
     </xml>
 
