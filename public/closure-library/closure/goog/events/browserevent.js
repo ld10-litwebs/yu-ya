@@ -244,7 +244,7 @@ goog.events.BrowserEvent.IEButtonMap = goog.debug.freeze([
   4,  // MIDDLE
   2   // RIGHT
 ]);
-})
+}, 500)
 
 /**
  * Static data for mapping mouse buttons.
@@ -262,7 +262,7 @@ goog.events.BrowserEvent.IE_POINTER_TYPE_MAP = goog.debug.freeze({
   3: goog.events.BrowserEvent.PointerType.PEN,
   4: goog.events.BrowserEvent.PointerType.MOUSE
 });
-})
+}, 500)
 
 /**
  * Accepts a browser event object and creates a patched, cross browser event
